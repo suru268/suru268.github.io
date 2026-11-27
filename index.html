@@ -3,167 +3,232 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Surekha M | RPA Developer, Automation and ITSM</title>
-<meta name="description" content="RPA Developer with 8+ years in automation, testing and ITIL service management. Blue Prism, Power BI, Python, SQL.">
+<title>Surekha M – RPA Developer</title>
+<meta name="description" content="Surekha M, RPA Developer at Somerset NHS Foundation Trust. Blue Prism, Power BI, SQL, test automation and ITIL. 8+ years in automation.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27><text y=%27.9em%27 font-size=%2790%27>🤖</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#f6f8fa;--panel:#fff;--ink:#14212b;--mute:#52606d;--line:#d5dde4;--accent:#0b6e75;--accent-ink:#fff;--node:#0b6e75}
-@media (prefers-color-scheme:dark){:root{--bg:#0e161c;--panel:#16212a;--ink:#e8eef2;--mute:#9db0bd;--line:#2a3a46;--accent:#4fc3c9;--accent-ink:#06262a;--node:#4fc3c9}}
+:root{
+  --bg:#f5f8fa; --surface:#ffffff; --ink:#1c2b36; --muted:#55687a;
+  --line:#d5dee6; --brand:#005eb8; --brand-ink:#ffffff; --accent:#00756a;
+  --serif:"Newsreader",Georgia,"Times New Roman",serif;
+  --sans:"Public Sans",system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--bg:#10181f; --surface:#17222b; --ink:#e6edf2; --muted:#93a6b6;
+        --line:#2a3945; --brand:#6cb4ff; --brand-ink:#08121a; --accent:#4cc9b8;}
+}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-h1,h2,h3{font-family:"Space Grotesk","Segoe UI",system-ui,sans-serif;line-height:1.15;margin:0}
-a{color:var(--accent)}
-a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.wrap{max-width:860px;margin:0 auto;padding:0 22px}
-header.hero{padding:72px 0 48px;border-bottom:1px solid var(--line)}
-h1{font-size:clamp(2.4rem,7vw,3.8rem);letter-spacing:-.02em}
-.role{margin:12px 0 0;font-size:1.15rem;color:var(--mute)}
-.lead{max-width:62ch;margin:24px 0 0;font-size:1.12rem}
-.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-.btn{display:inline-block;padding:11px 20px;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid var(--accent)}
-.btn.primary{background:var(--accent);color:var(--accent-ink)}
-.btn.ghost{color:var(--accent)}
-section{padding:48px 0;border-bottom:1px solid var(--line)}
-h2{font-size:1.6rem;margin-bottom:26px}
-.flow{list-style:none;margin:0;padding:0 0 0 30px;border-left:2px solid var(--line)}
-.flow>li{position:relative;padding-bottom:34px}
-.flow>li:last-child{padding-bottom:0}
-.flow>li::before{content:"";position:absolute;left:-39px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--node)}
-h3{font-size:1.2rem}
-.meta{margin:4px 0 12px;color:var(--mute);font-size:.95rem}
-.flow ul{margin:0;padding-left:20px}
-.flow li li{margin-bottom:5px}
-.tools{margin:12px 0 0;color:var(--mute);font-size:.95rem}
-dl.skills{display:grid;grid-template-columns:minmax(150px,200px) 1fr;gap:14px 24px;margin:0}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1rem/1.65 var(--sans);-webkit-text-size-adjust:100%}
+a{color:var(--brand)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.wrap{max-width:820px;margin:0 auto;padding:0 1.25rem}
+
+header{background:var(--brand);color:var(--brand-ink);padding:3.5rem 0 3rem}
+header h1{font:600 clamp(2.6rem,8vw,4.2rem)/1.05 var(--serif);margin:0 0 .6rem;letter-spacing:-.01em}
+header p.role{font-size:1.15rem;margin:0 0 1.6rem;max-width:34rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn{display:inline-block;padding:.6rem 1.1rem;border-radius:6px;font-weight:600;text-decoration:none;border:2px solid currentColor;color:var(--brand-ink);background:transparent}
+.btn.primary{background:var(--brand-ink);color:var(--brand)}
+.btn:hover{opacity:.85}
+
+nav{position:sticky;top:0;z-index:5;background:var(--surface);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;gap:1.4rem;overflow-x:auto;padding-top:.7rem;padding-bottom:.7rem}
+nav a{color:var(--muted);text-decoration:none;font-weight:500;white-space:nowrap}
+nav a:hover{color:var(--brand)}
+
+section{padding:2.6rem 0 .4rem}
+h2{font:600 1.8rem/1.2 var(--serif);margin:0 0 1.2rem}
+h3{font:600 1.05rem/1.35 var(--sans);margin:0}
+.job{background:var(--surface);border:1px solid var(--line);border-left:5px solid var(--brand);border-radius:6px;padding:1.2rem 1.3rem;margin-bottom:1.1rem}
+.job.past{border-left-color:var(--line)}
+.meta{color:var(--muted);font-size:.92rem;margin:.15rem 0 .7rem}
+.job ul{margin:.4rem 0 0;padding-left:1.15rem}
+.job li{margin:.25rem 0}
+.tools{font-size:.92rem;color:var(--muted);margin:.2rem 0 .5rem}
+details{margin-top:.6rem}
+summary{cursor:pointer;color:var(--brand);font-weight:600}
+
+dl.skills{display:grid;grid-template-columns:11rem 1fr;gap:.7rem 1.2rem;margin:0}
 dl.skills dt{font-weight:600}
-dl.skills dd{margin:0;color:var(--mute)}
-.certs{columns:2 280px;column-gap:32px;margin:0;padding-left:20px}
-.certs li{margin-bottom:6px;break-inside:avoid}
-footer{padding:36px 0 56px;color:var(--mute);font-size:.95rem}
-@media (max-width:560px){dl.skills{grid-template-columns:1fr;gap:4px}dl.skills dd{margin-bottom:12px}header.hero{padding-top:48px}}
-@media print{.actions{display:none}body{background:#fff;color:#000}}
+dl.skills dd{margin:0;color:var(--muted)}
+.cert-group{margin-bottom:1rem}
+.cert-group h3{margin-bottom:.3rem}
+.cert-group ul{margin:0;padding-left:1.15rem;color:var(--muted)}
+.edu li{margin:.3rem 0}
+footer{margin-top:3rem;padding:1.6rem 0 2.4rem;border-top:1px solid var(--line);color:var(--muted);font-size:.92rem}
+
+@media (max-width:620px){
+  dl.skills{grid-template-columns:1fr;gap:.1rem}
+  dl.skills dd{margin-bottom:.8rem}
+  header{padding:2.4rem 0 2.2rem}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
 </head>
 <body>
-<header class="hero">
-<div class="wrap">
-<h1>Surekha M</h1>
-<p class="role">RPA Developer · Automation · Data Analysis · ITSM and ITIL</p>
-<p class="lead">I build automation that takes repetitive work off people’s desks. At Somerset NHS Foundation Trust I cleared a backlog of eRS appointments with Blue Prism, and I have spent 8+ years in automation, testing and service management across the NHS, BT and Tech Mahindra.</p>
-<div class="actions">
-<a class="btn primary" href="resume.pdf" download>Download resume (PDF)</a>
-<a class="btn ghost" href="https://www.linkedin.com/in/msurekha268/">View LinkedIn</a>
-<a class="btn ghost" href="mailto:msurekha268@gmail.com">Email me</a>
-</div>
-</div>
+
+<header>
+  <div class="wrap">
+    <h1>Surekha M</h1>
+    <p class="role">8 years of experience in Automation and AI</p>
+    <div class="links">
+      <a class="btn primary" href="resume.pdf" download>Download resume (PDF)</a>
+      <a class="btn" href="mailto:msurekha268@gmail.com">Email me</a>
+      <a class="btn" href="https://www.linkedin.com/in/msurekha268/" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
 </header>
 
+<nav aria-label="Sections">
+  <div class="wrap">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#education">Education</a>
+  </div>
+</nav>
+
 <main class="wrap">
+
+<section id="about">
+  <h2>About</h2>
+  <p>I have over 8 years of experience in robotic process automation, software testing and IT service management. I work across the full automation lifecycle: gathering requirements, analysing business processes, then designing, testing, deploying and maintaining workflows.</p>
+  <p>I work with business analysts, developers and stakeholders to deliver scalable solutions. I know ITIL problem, incident and service management, and I am comfortable in operational environments where timescales and requirements keep changing.</p>
+</section>
+
 <section id="experience">
-<h2>Experience</h2>
-<ol class="flow">
+  <h2>Experience</h2>
 
-<li>
-<h3>RPA Developer, Somerset NHS Foundation Trust</h3>
-<p class="meta">October 2024 to present</p>
-<ul>
-<li>Automated the daily and monthly eRS extract reports for the data team.</li>
-<li>Cleared a backlog of eRS appointments and automated booking by replacing dummy appointments with real dates.</li>
-<li>Automated progress notes on Epro, the PIFU (patient initiated follow-up) process, and closing staff records in Allocate Optima Health Roster.</li>
-<li>Built, tested and released Blue Prism processes; monitor production and fix failures quickly.</li>
-<li>Found root causes of recurring incidents and drove corrective actions.</li>
-<li>Ran automation testing during clinical system upgrades and reported results in Power BI.</li>
-<li>Worked with subject matter experts and stakeholders using Agile, and drew process flow charts in Visio for clinical staff.</li>
-</ul>
-<p class="tools">Blue Prism 7.5.1, Power BI, SQL, VB.NET, Power Automate, TightVNC, Advanced Excel</p>
-</li>
+  <article class="job">
+    <h3>RPA Developer, Somerset NHS Foundation Trust</h3>
+    <p class="meta">October 2024 to present</p>
+    <p class="tools">Blue Prism 7.5.1, Power BI, SQL, VB.NET, Power Automate, TightVNC, advanced Excel</p>
+    <ul>
+      <li>Automate the daily and monthly eRS extract reports for the data team.</li>
+      <li>Automate clinical processes: progress notes on Epro, eRS appointment booking, clearing the eRS appointment backlog, and PIFU (patient-initiated follow-up).</li>
+      <li>Automate closing staff records in Allocate Optima for the Health Roster.</li>
+      <li>Build, develop, test and release Blue Prism processes, and monitor production for failures with quick fixes.</li>
+      <li>Find the root cause of recurring incidents and drive corrective actions.</li>
+      <li>Track and report with Power BI. Deliver projects using agile methods, working with subject matter experts and stakeholders.</li>
+      <li>Manage automation testing during clinical system upgrades.</li>
+    </ul>
+  </article>
 
-<li>
-<h3>Mobile Connectivity Engineer, BT Group</h3>
-<p class="meta">April 2022 to April 2024 · EE and BT router devices</p>
-<ul>
-<li>Supported Problem Management investigations and presented post-incident reports on major incidents to senior IT leaders.</li>
-<li>Cut manual effort with Python automation scripts and set up and maintained the automation framework.</li>
-<li>Tested routers and the web UI for major releases, generated reports automatically, and raised defects in ALM.</li>
-<li>Used trend analysis of incident and alerting data to prevent recurring problems.</li>
-<li>Worked with product, engineering, analytics and external vendors in Scrum and Agile teams.</li>
-</ul>
-<p class="tools">Python, pytest, Selenium, Wireshark, Scapy, Robot Framework, ALM, Jira, Android Studio, Apktool</p>
-</li>
+  <article class="job past">
+    <h3>Mobile Connectivity Engineer, BT Group</h3>
+    <p class="meta">April 2022 to April 2024 · EE and BT router devices</p>
+    <p class="tools">Python, pytest, Selenium, Scapy, Wireshark, ALM, Jira, Robot Framework</p>
+    <ul>
+      <li>Automated repetitive tasks with Python scripts and set up and maintained the automation framework.</li>
+      <li>Tested routers and devices across SIMs and lab environments, and tested the web UI for major releases.</li>
+      <li>Supported problem management: root cause analysis, post-incident reports for senior IT leaders, and trend analysis to prevent recurring incidents.</li>
+    </ul>
+    <details>
+      <summary>More about this role</summary>
+      <ul>
+        <li>Ran test cases and raised defects in ALM, and worked with an external vendor on end-to-end web UI testing.</li>
+        <li>Supported product management: documentation, wireframes, specifications and product backlog work using Scrum.</li>
+        <li>Facilitated virtual teams of subject matter experts to investigate problems affecting services, and supported continual improvement in Service Operations.</li>
+      </ul>
+    </details>
+  </article>
 
-<li>
-<h3>QA Engineer, Ocean Blue Software Ltd</h3>
-<p class="meta">April 2021 to April 2022 · Roku smart TV projects</p>
-<ul>
-<li>Tested smart TV builds for regional requirements, including DVB streams, audio description and subtitles.</li>
-<li>Ran functional API, smoke, regression and candidate build testing; tracked bugs in Jira and cases in TestRail.</li>
-<li>Documented projects in Confluence and supported build deployment through TeamCity.</li>
-</ul>
-</li>
+  <article class="job past">
+    <h3>QA Engineer, Ocean Blue Software</h3>
+    <p class="meta">April 2021 to April 2022 · Roku smart TV projects</p>
+    <p class="tools">TestRail, Jira, Confluence, TeamCity, PuTTY</p>
+    <ul>
+      <li>Tested smart TV builds for regional requirements, including DVB and ISDB-T streams, audio description and subtitles.</li>
+      <li>Ran functional API, smoke, regression and candidate-build tests, and tracked defects in Jira.</li>
+    </ul>
+  </article>
 
-<li>
-<h3>Software Engineer, Tech Mahindra Ltd</h3>
-<p class="meta">August 2007 to July 2009 · B2B Gateway for BT wBC</p>
-<ul>
-<li>Automated integration verification and validation testing, and built server health-check reports with shell scripts and crontab.</li>
-<li>Set up the Cyclone server, supported end-to-end B2B testing and wrote test design documents.</li>
-</ul>
-<p class="tools">UNIX, Shell scripting, Cyclone Server</p>
-</li>
-
-<li>
-<h3>Earlier roles</h3>
-<p class="meta">2004 to 2007</p>
-<ul>
-<li>Project Trainee, Tech Mahindra (Jan to Jun 2007): built the VVT Dashboard to automate verification and testing.</li>
-<li>Senior Faculty, Mainframe Computers Pvt Ltd (Mar to Aug 2004): taught programming and mentored student projects.</li>
-</ul>
-</li>
-
-</ol>
+  <article class="job past">
+    <h3>Software Engineer, Tech Mahindra</h3>
+    <p class="meta">August 2007 to July 2009 · B2B gateway for BT (wBC)</p>
+    <p class="tools">UNIX, Cyclone server, shell scripting</p>
+    <ul>
+      <li>Automated the integration verification and validation test environment.</li>
+      <li>Wrote shell and crontab scripts for server health-check reports and emailed alerts during critical problems.</li>
+    </ul>
+    <details>
+      <summary>Earlier roles</summary>
+      <ul>
+        <li>Project Trainee, Tech Mahindra (Jan to Jun 2007): built the VVT Dashboard to automate verification, validation and testing.</li>
+        <li>Senior Faculty (part-time), Mainframe Computers Pvt Ltd (Mar to Aug 2004): taught programming languages and mentored student projects.</li>
+      </ul>
+    </details>
+  </article>
 </section>
 
 <section id="skills">
-<h2>Skills</h2>
-<dl class="skills">
-<dt>Automation</dt><dd>Blue Prism, Power Automate Desktop, Power BI reporting, Robot Framework, TightVNC</dd>
-<dt>Programming</dt><dd>Python, pytest, Selenium, VB.NET, C, Perl, UNIX shell scripting, SQL, MySQL</dd>
-<dt>Testing</dt><dd>Smoke, functional, integration, regression, API, UI, performance, UAT, security and penetration testing; defect management</dd>
-<dt>ITSM and ITIL</dt><dd>Incident, problem, service, release, asset and configuration management; root cause analysis</dd>
-<dt>Project delivery</dt><dd>Agile, Scrum, Waterfall, SDLC, STLC, release planning, risk analysis</dd>
-<dt>Tools</dt><dd>Jira, Confluence, TestRail, HP ALM, Redmine, TeamCity, Git, GitHub, Wireshark, Visio</dd>
-<dt>Networking</dt><dd>2G to 5G, LTE, OSI model, SIP, VoIP, IMS, SSL, WPA2/3, Wi-Fi 6</dd>
-</dl>
+  <h2>Skills</h2>
+  <dl class="skills">
+    <dt>Automation</dt><dd>Blue Prism, Power BI, Power Automate Desktop, TightVNC, production monitoring</dd>
+    <dt>Programming</dt><dd>Python, pytest, Selenium, VB.NET, C, UNIX shell, Perl, Scapy</dd>
+    <dt>Data</dt><dd>SQL, MySQL, Excel, data analysis and extraction</dd>
+    <dt>Testing</dt><dd>Functional, API, regression, integration, UAT, performance, security, test planning and defect management</dd>
+    <dt>Service management</dt><dd>ITIL, ITSM, incident, problem, release, asset and configuration management</dd>
+    <dt>Delivery</dt><dd>Agile, Scrum, Waterfall, SDLC, STLC, release planning, risk analysis</dd>
+    <dt>Tools</dt><dd>Jira, Confluence, TestRail, HP ALM, Redmine, TeamCity, Git, GitHub, Wireshark, Visual Studio, PowerShell</dd>
+    <dt>Networking</dt><dd>2G to 5G, LTE, OSI model, SIP, VoIP, WPA2/3, Wi-Fi 6, Burp Suite</dd>
+    <dt>Systems</dt><dd>Windows, Linux, Ubuntu, Raspberry Pi, Android, iOS</dd>
+  </dl>
 </section>
 
 <section id="certifications">
-<h2>Certifications</h2>
-<ul class="certs">
-<li>SS&amp;C Blue Prism RPA Professional Certificate</li>
-<li>Career Essentials in Data Analysis (Microsoft and LinkedIn)</li>
-<li>Atlassian Agile Project Management Professional Certificate</li>
-<li>Intro to Service Management with ITIL 4</li>
-<li>IT Service Management Foundations: Problem Management</li>
-<li>Agile Foundations (IIBA)</li>
-<li>Cloud Security (Mpirical)</li>
-<li>Test Automation with Python (series)</li>
-<li>Selenium and Wireshark Essential Training</li>
-</ul>
-<p class="tools">Full list on <a href="https://www.linkedin.com/in/msurekha268/details/certifications/">LinkedIn</a>.</p>
+  <h2>Certifications</h2>
+  <div class="cert-group">
+    <h3>Automation and testing</h3>
+    <ul>
+      <li>SS&amp;C Blue Prism Robotic Process Automation Professional Certificate</li>
+      <li>Test Automation with Python (4 courses)</li>
+      <li>Selenium Essential Training; Learning Selenium</li>
+      <li>Wireshark Essential Training</li>
+    </ul>
+  </div>
+  <div class="cert-group">
+    <h3>Service management and agile</h3>
+    <ul>
+      <li>Intro to Service Management with ITIL 4</li>
+      <li>IT Service Management Foundations; General Practices; Problem Management</li>
+      <li>Atlassian Agile Project Management Professional Certificate</li>
+      <li>Agile Foundations (IIBA)</li>
+    </ul>
+  </div>
+  <div class="cert-group">
+    <h3>Data and security</h3>
+    <ul>
+      <li>Career Essentials in Data Analysis (Microsoft and LinkedIn)</li>
+      <li>Excel Statistics Essential Training; Predictive Analytics: Data Mining</li>
+      <li>Cloud Security (Mpirical); Learning Mobile Device Security</li>
+    </ul>
+  </div>
+  <p><a href="https://www.linkedin.com/in/msurekha268/details/certifications/" rel="noopener">See the full list on LinkedIn</a></p>
 </section>
 
-<section id="education" style="border-bottom:0">
-<h2>Education</h2>
-<p><strong>Master of Computer Application (MCA)</strong>, Visvesvaraya Technological University, Karnataka, 2007 (75%)<br>
-<strong>BSc Computer and Electronics</strong>, Dr. BAMU University, Maharashtra, 2004</p>
+<section id="education">
+  <h2>Education</h2>
+  <ul class="edu">
+    <li><strong>Master of Computer Applications (MCA)</strong>, Visvesvaraya Technological University, Belgaum, Karnataka, 2007</li>
+    <li><strong>BSc Computer and Electronics</strong>, Dr. BAMU University, Aurangabad, Maharashtra, 2004</li>
+  </ul>
 </section>
+
 </main>
 
 <footer>
-<div class="wrap">Surekha M · <a href="mailto:msurekha268@gmail.com">msurekha268@gmail.com</a> · <a href="https://www.linkedin.com/in/msurekha268/">LinkedIn</a></div>
+  <div class="wrap">
+    Contact: <a href="mailto:msurekha268@gmail.com">msurekha268@gmail.com</a> ·
+    <a href="https://www.linkedin.com/in/msurekha268/" rel="noopener">LinkedIn</a> ·
+    <a href="resume.pdf" download>Resume (PDF)</a>
+  </div>
 </footer>
+
 </body>
 </html>
